@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Dashboard de Tecnologia</h1>
+            <div class="notification-icon">
+                🔔 <span class="badge">3</span>
+            </div>
+        </nav>
+    </header>
+
+    <aside>
+        <ul>
+            <li><a href="#" onclick="showSection('home')"><span>🏠</span> Início</a></li>
+            <li><a href="#" onclick="showSection('estatisticas')"><span>📊</span> Estatísticas</a></li>
+            <li><a href="#" onclick="showSection('atividades')"><span>📋</span> Atividades</a></li>
+            <li><a href="#" onclick="showSection('configuracoes')"><span>⚙️</span> Configurações</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="home" class="section active">
+            <h2>Bem-vindo ao Dashboard</h2>
+            <div class="welcome-image">
+                <img src="https://via.placeholder.com/600x300" alt="Imagem de boas-vindas" style="width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            </div>
+            <div class="dashboard-overview">
+                <h3>Visão Geral</h3>
+                <p>Aqui você pode visualizar as informações mais importantes e acessar as seções principais do dashboard.</p>
+            </div>
+            <div class="buttons">
+                <button onclick="showSection('estatisticas')" class="btn">Ver Estatísticas</button>
+                <button onclick="showSection('atividades')" class="btn">Atividades Recentes</button>
+            </div>
+            <div class="chart-placeholder">
+                <h3>Gráfico de Atividades</h3>
+                <img src="https://via.placeholder.com/400x200" alt="Gráfico de Atividades" style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            </div>
+        </section>
+
+        <section id="estatisticas" class="section">
+            <h2>Estatísticas</h2>
+            <p>Aqui você encontra as estatísticas do sistema.</p>
+            <section class="stats-cards">
+                <div class="card">
+                    <h3>Total de Usuários</h3>
+                    <p>1,234</p>
+                    <p>Total de usuários registrados no sistema.</p>
+                </div>
+                <div class="card">
+                    <h3>Atividades Concluídas</h3>
+                    <p>876</p>
+                    <p>Total de atividades concluídas até o momento.</p>
+                </div>
+                <div class="card">
+                    <h3>Novos Registros</h3>
+                    <p>56</p>
+                    <p>Novos registros de usuários no sistema no dia de hoje.</p>
+                </div>
+                <div class="card">
+                    <h3>Notificações Pendentes</h3>
+                    <p>23</p>
+                    <p>Total de notificações que aguardam ação do usuário.</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="atividades" class="section">
+            <h2>Atividades Recentes</h2>
+            <div class="activity">
+                <span>📌</span>
+                <div class="activity-details">
+                    <h3>Reunião semanal marcada</h3>
+                    <p>Discussão sobre o progresso do projeto e definição de novas metas.</p>
+                    <p><strong>Status:</strong> Confirmada</p>
+                    <p><strong>Data:</strong> 30 de Novembro, 2024</p>
+                </div>
+            </div>
+            <div class="activity">
+                <span>✅</span>
+                <div class="activity-details">
+                    <h3>Funcionalidade desenvolvida</h3>
+                    <p>Nova funcionalidade de notificação foi implementada e está funcionando corretamente.</p>
+                    <p><strong>Status:</strong> Concluída</p>
+                    <p><strong>Data:</strong> 29 de Novembro, 2024</p>
+                </div>
+            </div>
+            <div class="activity">
+                <span>🚀</span>
+                <div class="activity-details">
+                    <h3>Lançamento de nova versão</h3>
+                    <p>A versão 2.0 do sistema foi lançada, trazendo novas funcionalidades e melhorias.</p>
+                    <p><strong>Status:</strong> Lançada</p>
+                    <p><strong>Data:</strong> 28 de Novembro, 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="configuracoes" class="section">
+            <h2>Configurações</h2>
+            <p>Aqui você pode ajustar as configurações do sistema.</p>
+            <section class="settings">
+                <div class="setting-option">Alterar senha</div>
+                <div class="setting-option">Gerenciar usuários</div>
+                <div class="setting-option">Preferências de notificação</div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Privacidade</a> |
+            <a href="#">Termos de Uso</a>
+        </nav>
+        <p>&copy; 2024 Meu Dashboard. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<script src="index.js"></script>
+
+</html>
